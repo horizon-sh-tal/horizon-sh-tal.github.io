@@ -7,7 +7,7 @@
     <style>
         /* Global styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -66,6 +66,14 @@
             color: #00FF00;
         }
 
+        .dark-mode .section-title {
+            color: #32CD32; /* Lighter Green */
+        }
+
+        .dark-mode p {
+            color: #66FF66; /* Light Green */
+        }
+
         .dark-mode-toggle {
             position: absolute;
             top: 10px;
@@ -78,13 +86,17 @@
             outline: none;
         }
 
+        /* Light Mode Specific */
+        body {
+            background-color: #87CEEB; /* Sky Blue */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Horizon Tal | Portfolio</h1>
-            <div class="dark-mode-toggle" onclick="toggleDarkMode()">💡</div>
+            <h1>Horizon Tal</h1>
+            <div class="dark-mode-toggle" onclick="toggleDarkMode()">☀️</div>
         </header>
 
         <!-- About Me -->
@@ -92,6 +104,8 @@
             <h2 class="section-title">About Me</h2>
             <p>I am a passionate <strong>Cybersecurity Enthusiast</strong> and an aspiring <strong>Web Developer</strong> currently pursuing B.Sc.(hons) Computer Science at Galgotias University.</p>
             <p>Email: kshitijmishra220304@gmail.com | College Email: kshitij.22scse1100047galgotiasuniversity@edu.in | Phone: 9336004770</p>
+            <p>GitHub Profile: <a href="https://github.com/horizon-sh-tal" target="_blank">https://github.com/horizon-sh-tal</a></p>
+            <p>LinkedIn Profile: <a href="https://www.linkedin.com/in/horizonsturmovik/" target="_blank">https://www.linkedin.com/in/horizonsturmovik/</a></p>
         </section>
 
         <!-- Skills -->
@@ -142,12 +156,6 @@
             Working on penetration testing, vulnerability assessment, and network security tasks. Using tools like Metasploit, Nmap, and Burp Suite to analyze vulnerabilities and perform security assessments on web applications and networks.</p>
         </section>
 
-        <!-- Contact -->
-        <section class="content-box">
-            <h2 class="section-title">Contact Me</h2>
-            <p>Feel free to reach out to me via email or phone. Let's connect!</p>
-        </section>
-
     </div>
 
     <script>
@@ -155,7 +163,7 @@
             const body = document.body;
             body.classList.toggle('dark-mode');
             const icon = document.querySelector('.dark-mode-toggle');
-            icon.textContent = body.classList.contains('dark-mode') ? '🌙' : '💡';
+            icon.textContent = body.classList.contains('dark-mode') ? '🌙' : '☀️';
         }
     </script>
 </body>
