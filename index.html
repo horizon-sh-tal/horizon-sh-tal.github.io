@@ -5,21 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon_tal | Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        h1 { color: #007bff; }
-        a { color: #333; text-decoration: none; }
-        .container { max-width: 600px; margin: auto; }
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+        }
+        
+        h1, h2 {
+            color: #4CAF50;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 4px solid #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        .about {
+            margin: 20px 0;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skills {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            padding: 8px;
+            font-size: 1.1em;
+            border-bottom: 1px solid #444;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #bbb;
+            padding: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #bbb;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Horizon_tal</h1>
-        <p>Cybersecurity Enthusiast | Web Developer | Ethical Hacking Learner</p>
-        <p><strong>Skills:</strong> Python, FastAPI, MongoDB, Cybersecurity, Penetration Testing</p>
-        <p>
-            <a href="https://github.com/horizon-sh-tal" target="_blank">GitHub</a> | 
-            <a href="https://linkedin.com/in/horizon-sh-tal" target="_blank">LinkedIn</a>
-        </p>
+        <!-- Profile Picture -->
+        <img src="your-image.jpg" alt="Profile Picture" class="profile-img">
+
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Kshitij Mishra, a passionate cybersecurity enthusiast, web developer, and ethical hacking learner. 
+                I love solving complex problems and learning new technologies to improve security and build innovative web solutions.
+            </p>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>MongoDB</li>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+                <li>Penetration Testing & Cybersecurity</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:kshitijmishra220304@gmail.com">kshitijmishra220304@gmail.com</a></p>
+            <p>
+                <a href="https://github.com/horizon-sh-tal" target="_blank">GitHub</a> | 
+                <a href="https://linkedin.com/in/horizon-sh-tal" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+
     </div>
+
+    <footer>
+        <p>&copy; 2025 Horizon_tal. All rights reserved.</p>
+    </footer>
 </body>
 </html>
